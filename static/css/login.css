@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.view {
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+
+    height: 300px;
+    width: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.589);
+    background-color: white;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#signin {
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.589);
+    background-color: white;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+}
+
+input {
+    background-color: whitesmoke;
+    border: 1px solid rgba(128, 128, 128, 0.589);
+    border-radius: 3px;
+    margin: 5px 5px;
+    padding-left: 5px;
+
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+    background-color: rgba(30, 65, 163, 0.993);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: rgba(30, 65, 163, 0.993);
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+#spinner {
+    position: absolute;
+    z-index: 2;
+    visibility: hidden;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: whitesmoke;
+    border-bottom-color: whitesmoke;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.err {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
